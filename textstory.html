@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+	<script src="game.js"></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    </head>
+
+    <body onload="startgame()">
+	<div class="w3-container w3-teal w3-center">
+		<h1> Welcome to my text story! This story is about you, a space dog gliding through space. </h1>
+	</div>
+
+	<div class="w3-center">
+	<img id="image" height="250px" width="250px">
+	</div>
+
+	<div id="game" class="w3-container w3-center">
+	</div>
+
+	<p id="choose" class="w3-container w3-center">
+	Choose a button to click.
+	</p>
+
+	<div id="left-right-buttons" class="w3-container w3-teal w3-center">
+	    <button id="leftPlanet" onclick="goleft()">LEFT</button> |
+	    <button id="right" onclick="goright()">RIGHT</button>
+	</div>
+	<div id="blue-yellow-buttons" class="w3-container w3-teal w3-center">
+	    <button id="blue" onclick="goblue()">SOUND</button> |
+	    <button id="yellow" onclick="goyellow()">LIGHT</button>
+	</div>
+	<div id="startover" class="w3-container w3-teal w3-center">
+	    <button  onclick="startgame()">STARTOVER</button> |
+	    <button  onclick="quit()">QUIT</button>
+	</div>
+  <div id="yes-no-buttons" class="w3-container w3-teal w3-center">
+	    <button id="yes" onclick="yes()">YES</button> |
+	    <button id="no" onclick="no()">NO</button>
+	</div>
+
+    </body>
+</html>
